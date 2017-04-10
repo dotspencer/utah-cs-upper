@@ -1,3 +1,8 @@
+/*
+ * Use in console of search result page of schedule planner
+ * ("Search for a Class" link in CIS)
+ */
+
 var c = document.querySelectorAll('td .PAGROUPBOXLABELLEVEL1.PSLEFTCORNER');
 var larry = document.createElement('div');
 for(var i = 0; i < c.length; i++){
