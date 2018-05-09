@@ -1,4 +1,7 @@
 /*
+ * Edit: Link for index page found in dars report.
+ * Generate and view report and click on approved class links below some sections.
+ *
  * Use in console of search result page of schedule planner
  * ("Search for a Class" link in CIS)
  */
