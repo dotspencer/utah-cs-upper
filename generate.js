@@ -13,6 +13,9 @@
   classes.forEach(c => {
     const text = c.innerText.trim();
     const [dep, course] = text.split(' ');
+
+    if (parseInt(course) >= 6000) return;
+
     const title = text.split('-')[1].trim();
     const a = document.createElement('a');
     const li = document.createElement('li');
@@ -24,5 +27,4 @@
   });
 
   console.log(output.join('\n'));
-  
 })();
