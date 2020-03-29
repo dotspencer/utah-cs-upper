@@ -14,7 +14,7 @@ for (let i = 0; i < links.length; i++) {
       'width=600',
       'height=600',
       'top=0',
-      'left=800',
+      'left=850',
     ];
     window.open(link.href, 'small', options.join(','));
   });
