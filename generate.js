@@ -20,11 +20,12 @@
     const a = document.createElement('a');
     const li = document.createElement('li');
     a.innerText = text;
-    a.href = "https://dars.sys.utah.edu/selfservice/plannedcourse/preview.html?department=" + dep + "&number=" + course;
+    a.href = "https://dars.sys.utah.edu/selfservice/plannedcourse/preview.html?department=" + dep + "%20%20%20&number=" + course;
     a.setAttribute('target', 'view');
     li.appendChild(a);
     output.push(li.outerHTML);
   });
 
-  console.log(output.join('\n'));
+  copy(output.join('\n'));
+  console.log('copied to clipboard');
 })();
