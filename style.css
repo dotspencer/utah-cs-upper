@@ -21,26 +21,29 @@ li {
   list-style-type: none;
   font-size: 1.1rem;
   background-color: whitesmoke;
-  border-bottom: 1px solid lightgray;
   transition: all .2s;
-  border-left: 0 solid gold;
 }
-li:last-of-type {
-  border: none;
-}
-li.current {
-  background-color: #eaeaea;
-  border-left: 20px solid mediumseagreen;
+li + li {
+  border-top: 1px solid lightgray;
 }
 a {
   color: #333;
   text-decoration: none;
   display: inline-block;
-  padding: 3px 6px;
+  padding: 4px 6px 6px;
 }
 ul {
   padding: 0;
 }
 iframe {
   border: none;
+}
+.bottom {
+  font-size: .9rem;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.bottom .professor {
+  margin-top: 5px;
+  text-transform: capitalize;
 }
