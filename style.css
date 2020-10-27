@@ -6,10 +6,13 @@ body {
 h1, h2, h3, h4 {
   font-weight: 200;
 }
-.left {
-  float: left;
-  width: 50%;
-  padding: 20px;
+h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+.content {
+  max-width: 500px;
+  margin: 30px auto 0;
 }
 .right {
   float: right;
@@ -22,15 +25,11 @@ li {
   font-size: 1.1rem;
   background-color: whitesmoke;
   transition: all .2s;
+  padding: 12px 15px;
+  border-radius: 5px;
 }
 li + li {
-  border-top: 1px solid lightgray;
-}
-a {
-  color: #333;
-  text-decoration: none;
-  display: inline-block;
-  padding: 4px 6px 6px;
+  margin-top: 10px;
 }
 ul {
   padding: 0;
@@ -38,12 +37,40 @@ ul {
 iframe {
   border: none;
 }
+.name {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+.name a {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
 .bottom {
   font-size: .9rem;
   margin-top: 5px;
-  margin-left: 5px;
 }
 .bottom .professor {
-  margin-top: 5px;
   text-transform: capitalize;
+}
+.bottom .times {
+  margin-top: 7px;
+}
+.bottom .times span.day {
+  display: inline-block;
+  padding: 3px;
+  background-color: #eaeaea;
+  color: lightgray;
+  margin: 0 2px;
+  border-radius: 4px;
+  width: 24px;
+  text-align: center;
+  font-size: .8rem;
+}
+.bottom .times span.day.yes {
+  background-color: darkseagreen;
+  color: white;
+}
+.bottom .times span.hours {
+  margin-left: 12px;
 }
